@@ -18,6 +18,7 @@ public class HeroInteraction : MonoBehaviour
         
         _cursor.CursorPoint.TriggerEnter += OnCursorTriggerEnter;
         _cursor.CursorPoint.TriggerExit += OnCursorTriggerExit;
+        _inputService.CurrentInput.InteractPressed += TryInteract;
     }
 
     public void DisableInteraction()
@@ -26,6 +27,8 @@ public class HeroInteraction : MonoBehaviour
         
         _cursor.CursorPoint.TriggerEnter -= OnCursorTriggerEnter;
         _cursor.CursorPoint.TriggerExit -= OnCursorTriggerExit;
+        _inputService.CurrentInput.InteractPressed -= TryInteract;
+
     }
     
     
@@ -87,5 +90,15 @@ public class HeroInteraction : MonoBehaviour
     public void UnHiglightInteractable(IInteractable rackBase)
     {
         rackBase.UnHighlight();
+    }
+
+    public void TryInteract()
+    {
+        if (_currentInteractable == null)
+        {
+            return;
+        }
+        
+        _currentInteractable.Interact();
     }
 }

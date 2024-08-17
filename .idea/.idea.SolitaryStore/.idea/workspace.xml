@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="97562405-8039-4ead-a003-84e5f89f58c7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -7,71 +25,82 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71DE4FCC-BA99-4D76-9292-55576AF20B8C/56/13fa636d/NavMeshAgent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/Hud/MoneyCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2D036C1-6CA6-4E0E-B937-03A3B13E733A/d8/b283d5ac/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/IInputService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5B293C7-4049-457C-ABC2-8437C5A76392/a8/abba1cda/IInitializable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2D036C1-6CA6-4E0E-B937-03A3B13E733A/55/875f2dd3/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/LevelSceneContext/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/73EE02D7-03B2-4000-B651-8E8687CCDACD/05/453f2688/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/StateFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/58B38253-08EF-4432-906C-14DC69DAAB25/e6/3893011a/Stats.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2D036C1-6CA6-4E0E-B937-03A3B13E733A/af/0841895b/Ray.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers/Constants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Level/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2D036C1-6CA6-4E0E-B937-03A3B13E733A/e2/afed3ee6/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/InfrastructureInstaller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/ServicesInstaller.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/RackBase.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Helpers/Constants.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/KeyboardMouseInput.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Coursor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/AllServices.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/IInputService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/TestInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/LoginViewModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/LoginController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/LoadingCurtainInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadingCurtain.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Game.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameRunner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameStateMachine.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadLevelState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadProgressState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/LoadSceneState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/BootstrapState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu/MainMenuManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/InputService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Input/KeyboardMouseInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/ServicesInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Cursor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/IInputService.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameBootstrapper.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeroMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/SceneLoader.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/IStateFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/StateFactory.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/BootstrapState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/LoadProgressState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/LoadSceneState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/GameStateMachine.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/InfrastructureInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/CursorPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/IInteractable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/RackBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/HeroMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/HeroInteraction.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Cursor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/HeroMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/HeroControls.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/Cursor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/LevelSceneContext/LevelManagerInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/CameraController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/LevelSceneContext/LevelInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/Hero.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/GameBootstrapper.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Data/InteractableItemsProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/ProjectContext/ServicesInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/ProgressService/IProgressService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/ProgressService/ISaveProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Data/ShopProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Level/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/ISaveLoadService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/SaveLoadService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/GameStateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/IInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/KeyboardMouseInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/NewInputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Input/KeyboardAndMouseInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/IInputService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/InputService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/NewInputSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/HeroInteraction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/ShopProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/MoneyData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/LoadProgressState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/RacksData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Data/StoreProgress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/Hud/MoneyCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/States/LoadSceneState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/RackBase.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Level/InteractableItemsManager.cs" />
       </list>
     </option>
   </component>
@@ -163,6 +192,23 @@
       <workItem from="1723416759691" duration="1924000" />
       <workItem from="1723418807501" duration="1760000" />
       <workItem from="1723420708153" duration="635000" />
+      <workItem from="1723496586285" duration="1513000" />
+      <workItem from="1723499802443" duration="1123000" />
+      <workItem from="1723504354706" duration="1779000" />
+      <workItem from="1723590238031" duration="596000" />
+      <workItem from="1723592411758" duration="567000" />
+      <workItem from="1723593011602" duration="1775000" />
+      <workItem from="1723595056660" duration="1544000" />
+      <workItem from="1723672197632" duration="1756000" />
+      <workItem from="1723674083657" duration="477000" />
+      <workItem from="1723760029641" duration="2133000" />
+      <workItem from="1723763055624" duration="1766000" />
+      <workItem from="1723764867000" duration="689000" />
+      <workItem from="1723854015431" duration="1455000" />
+      <workItem from="1723855584601" duration="345000" />
+      <workItem from="1723856013616" duration="911000" />
+      <workItem from="1723932685188" duration="1442000" />
+      <workItem from="1723934995229" duration="877000" />
     </task>
     <servers />
   </component>
@@ -171,17 +217,29 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="670" y="198" key="RiderGenerateDialog" timestamp="1723385487372">
+    <state x="670" y="198" key="RiderGenerateDialog" timestamp="1723764031746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="198" key="RiderGenerateDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1723385487372" />
-    <state x="621" y="208" width="678" height="624" key="find.popup" timestamp="1723250023291">
+    <state x="670" y="198" key="RiderGenerateDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1723764031746" />
+    <state x="621" y="208" width="678" height="624" key="find.popup" timestamp="1723674186293">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="621" y="208" width="678" height="624" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1723250023291" />
+    <state x="621" y="208" width="678" height="624" key="find.popup/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1723674186293" />
   </component>
 </project>

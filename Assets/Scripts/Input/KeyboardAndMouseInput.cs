@@ -1,11 +1,15 @@
+using System;
 using UnityEngine;
 
-public class KeyboardMouseInput : IInput
+public class KeyboardAndMouseInput : IInput
 {
     private const string Horizontal = "Horizontal";
     private const string Vertical = "Vertical";
     
     private Vector2 _axis;
+    public event Action InteractPressed;
+    
+
     public  Vector2 Axis
     {
         get

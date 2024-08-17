@@ -5,7 +5,7 @@ public class GameBootstrapper : MonoBehaviour
 {
   [Inject] private GameStateMachine _gameStateMachine;
 
-  private void Start()
+  private void Awake()
   {
     _gameStateMachine.Enter<BootstrapState>();
   }

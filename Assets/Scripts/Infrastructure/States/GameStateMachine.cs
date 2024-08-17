@@ -13,8 +13,8 @@ public class GameStateMachine
         _states = new Dictionary<Type, IExitableState>()
         {
             [typeof(BootstrapState)] = new BootstrapState(this,sceneLoader),
-            [typeof(LoadProgressState)] = new LoadProgressState(this,diContainer.Resolve<IInputService>()),
-            [typeof(LoadSceneState)] = new LoadSceneState(this,sceneLoader,diContainer.Resolve<LoadingCurtain>()),
+            [typeof(LoadProgressState)] = new LoadProgressState(this,diContainer.Resolve<IInputService>(),diContainer.Resolve<ISaveLoadService>(),diContainer.Resolve<IProgressService>()),
+            [typeof(LoadSceneState)] = new LoadSceneState(this,sceneLoader,diContainer.Resolve<LoadingCurtain>(),diContainer.Resolve<ISaveLoadService>(),diContainer.Resolve<IProgressService>()),
             [typeof(GameLoopState)] = new GameLoopState(this)
         };
     }

@@ -16,7 +16,7 @@ public class HeroMovement : MonoBehaviour
 
     private bool _isEnabled;
 
-    private void Start()
+    private void Awake()
     {
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class LoadProgressState : IState
@@ -6,17 +7,18 @@ public class LoadProgressState : IState
     private readonly GameStateMachine _gameStateMachine;
 
     private readonly IInputService _inputService;
-    // private readonly IPersistantProgressService _progressService;
-    // private readonly ISaveLoadService _saveLoadService;
+    private readonly IProgressService _progressService;
+    private readonly ISaveLoadService _saveLoadService;
 
     private string _startLevelName = "MainMenu";
     
-    public LoadProgressState(GameStateMachine gameStateMachine, IInputService inputService /* ,IPersistantProgressService progressService, ISaveLoadService saveLoadService */)
+    public LoadProgressState(GameStateMachine gameStateMachine, IInputService inputService, ISaveLoadService saveLoadService,  IProgressService progressService)
     {
         _gameStateMachine = gameStateMachine;
         _inputService = inputService;
-        // _progressService = progressService;
-        // _saveLoadService = saveLoadService;
+        _saveLoadService = saveLoadService;
+        _progressService = progressService;
+        
     }
 
     public void Enter()
@@ -31,20 +33,16 @@ public class LoadProgressState : IState
     }
     private void TryLoadProgress()
     {
-        // _progressService.PlayerProgress = _saveLoadService.LoadProgress() ?? NewProgress();
-        _inputService.SetCurrentInput(InputType.KeyboardAndMouse);
+        _progressService.StoreProgress = _saveLoadService.LoadProgress() ?? NewProgress();
+        
+        _inputService.SetCurrentInput(InputType.NewInputSystem);  //TODO Move somewhere else??
         
     }
 
-    // private PlayerProgress NewProgress()
-    // {
-    //     var progress = new PlayerProgress(initialLevel: "Main");
-    //
-    //     progress.HeroState.MaxHP = 50;
-    //     progress.HeroState.ResetHP();
-    //     progress.HeroStats.Damage = 1f;
-    //     progress.HeroStats.DamageRadius = 1f;
-			 //
-    //     return progress;
-    // }
+    private StoreProgress NewProgress()
+    {
+        var progress = new StoreProgress();
+
+        return progress;
+    }
 }

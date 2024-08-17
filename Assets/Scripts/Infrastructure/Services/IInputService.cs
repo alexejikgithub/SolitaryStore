@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿using UnityEngine.InputSystem;
 
 public interface IInputService : IService
 {
@@ -12,5 +12,5 @@ public interface IInputService : IService
 public enum InputType
 {
     KeyboardAndMouse,
-    none
+    NewInputSystem,
 }

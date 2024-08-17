@@ -1,4 +1,5 @@
 ﻿using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using Zenject;
 
@@ -8,17 +9,21 @@ public class LoadSceneState : IPayloadedState<string>
     private readonly GameStateMachine _stateMachine;
     private readonly SceneLoader _sceneLoader;
     private readonly LoadingCurtain _curtain;
+    private readonly ISaveLoadService _saveLoadService;
+    private readonly IProgressService _progressService;
+
     // private readonly IGameFactory _gameFactory;
-    // private readonly IPersistantProgressService _progressService;
     // private readonly IStaticDataService _staticData;
     // private readonly IUiFactory _uiFactory;
 
 
-    public LoadSceneState(GameStateMachine stateMachine, SceneLoader sceneLoader, LoadingCurtain curtain /* , IGameFactory gameFactory, IPersistantProgressService progressService, IStaticDataService staticData, IUiFactory uiFactory*/)
+    public LoadSceneState(GameStateMachine stateMachine, SceneLoader sceneLoader, LoadingCurtain curtain, ISaveLoadService saveLoadService, IProgressService progressService /* , IGameFactory gameFactory, IPersistantProgressService progressService, IStaticDataService staticData, IUiFactory uiFactory*/)
     {
         _stateMachine = stateMachine;
         _sceneLoader = sceneLoader;
         _curtain = curtain;
+        _saveLoadService = saveLoadService;
+        _progressService = progressService;
         // _gameFactory = gameFactory;
         // _progressService = progressService;
         // _staticData = staticData;
@@ -44,6 +49,7 @@ public class LoadSceneState : IPayloadedState<string>
         // InformProgressReaders();
 
         _stateMachine.Enter<GameLoopState>();
+        InformProgressListeners();
     }
 
     private void InitUiRoot()
@@ -51,12 +57,12 @@ public class LoadSceneState : IPayloadedState<string>
        // _uiFactory.CreateUIRoot();
     }
 
-    private void InformProgressReaders()
+    private void InformProgressListeners()
     {
-        // foreach (ISavedProgressReader progressReader in _gameFactory.ProgressReaders)
-        // {
-        //     progressReader.LoadProgress(_progressService.PlayerProgress);
-        // }
+        foreach (ILoadProgress progressReader in _saveLoadService.LoadProgressesListeners)
+        {
+            progressReader.LoadProgress(_progressService.StoreProgress);
+        }
     }
 
     private void InitHud(GameObject hero)

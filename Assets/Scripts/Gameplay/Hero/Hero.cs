@@ -1,17 +1,17 @@
-using System;
 using UnityEngine;
 using Zenject;
 
 public class Hero : MonoBehaviour
 {
-    [SerializeField] private Camera _camera;
+    
     [SerializeField] private HeroControls _controls;
 
     [Inject] private IInputService _inputService;
+    [Inject] private CameraController _cameraController;
     
-    private void Start()
+    public void Initialize()
     {
-        _controls.EnableControls(_inputService, _camera);
+        _controls.EnableControls(_inputService, _cameraController.MainCamera);
     }
 
     private void OnDestroy()

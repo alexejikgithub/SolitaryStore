@@ -6,7 +6,7 @@ public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] private Button _startGameButton;
     
-    private string _levelName = "SampleScene";
+    private string _levelName = "Store";
     
     [Inject] private GameStateMachine _gameStateMachine;
 

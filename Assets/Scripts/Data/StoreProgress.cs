@@ -4,16 +4,16 @@ using UnityEngine;
 [Serializable]
 public class StoreProgress
 {
-    [SerializeField] private RacksData _racksData;
+    [SerializeField] private StoreItemsData storeItemsData;
     [SerializeField] private MoneyData _moneyData;
 
 
-    public RacksData RacksData => _racksData;
+    public StoreItemsData StoreItemsData => storeItemsData;
     public MoneyData MoneyData => _moneyData;
 
     public StoreProgress()
     {
-        _racksData = new RacksData();
+        storeItemsData = new StoreItemsData();
         _moneyData = new MoneyData();
     }
 }

@@ -1,23 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HeroControls : MonoBehaviour
 {
     [SerializeField] private HeroMovement _heroMovement;
-    [SerializeField] private HeroInteraction _heroInteraction;
+    [SerializeField] private HeroInteractor heroInteractor;
 
     private IInputService _inputService;
     
     public void EnableControls(IInputService inputService, Camera mainCamera)
     {
         _heroMovement.EnableMovement(inputService);
-        _heroInteraction.EnableInteraction(inputService, mainCamera);
+        heroInteractor.EnableInteraction(inputService, mainCamera);
     }
 
     public void DisableControls()
     {
         _heroMovement.DisableMovement();
-        _heroInteraction.DisableInteraction();
+        heroInteractor.DisableInteraction();
     }
 }

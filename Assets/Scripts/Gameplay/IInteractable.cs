@@ -1,6 +1,4 @@
-﻿public interface IInteractable
+﻿public interface IInteractable : IHighlightable
 {
-    void Highlight();
-    void UnHighlight();
-    void Interact();
+    void Interact(Hero hero);
 }

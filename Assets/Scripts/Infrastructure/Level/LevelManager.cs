@@ -7,8 +7,6 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Transform _heroSpawnPoint;
     [SerializeField] private Hero _heroprefab;
 
-    [SerializeField] private Vector3 _angle;
-
     [Inject] private ISaveLoadService _saveLoadService;
     
     private Hero _hero;

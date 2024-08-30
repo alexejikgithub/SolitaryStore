@@ -4,10 +4,32 @@
     <e p="C:\Users\alexe\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\alexe\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_SolitaryStore.-373234723.00" t="ExcludeRecursive" />
     <e p="D:\PetProjects\SolitaryStore" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Gothicvania-Town" t="Include">
+          <e p="Animations" t="Include" />
+          <e p="Art" t="Include">
+            <e p="Environment" t="Include">
+              <e p="Background" t="Include" />
+              <e p="props-sliced" t="Include" />
+              <e p="sliced-tileset" t="Include" />
+            </e>
+            <e p="Sprites" t="Include">
+              <e p="bearded-idle" t="Include" />
+              <e p="bearded-walk" t="Include" />
+              <e p="hat-man-idle" t="Include" />
+              <e p="hat-man-walk" t="Include" />
+              <e p="oldman-idle" t="Include" />
+              <e p="oldman-walk" t="Include" />
+              <e p="woman-idle" t="Include" />
+              <e p="woman-walk" t="Include" />
+            </e>
+          </e>
+          <e p="Scenes" t="Include" />
+        </e>
         <e p="Gutty Kreum" t="Include">
           <e p="Free Japanese City Game Assets" t="Include">
             <e p="Demo" t="Include" />
@@ -18,7 +40,50 @@
         <e p="InputActions" t="Include">
           <e p="Controls.cs" t="Include" />
         </e>
+        <e p="Outline" t="Include">
+          <e p="Editor" t="Include">
+            <e p="OptionalDrawer.cs" t="Include" />
+            <e p="OutlineFx.Editor.asmdef" t="Include" />
+            <e p="SolidMaskDrawer.cs" t="Include" />
+          </e>
+          <e p="OutlineFx.asmdef" t="Include" />
+          <e p="package.json" t="Include" />
+          <e p="Runtime" t="Include">
+            <e p="Optional.cs" t="Include" />
+            <e p="Outline.cs" t="Include" />
+            <e p="OutlineBlocker.cs" t="Include" />
+            <e p="OutlineFx.cs" t="Include" />
+            <e p="OutlineFx.Pass.cs" t="Include" />
+            <e p="OutlineFxFeature.cs" t="Include" />
+            <e p="Shaders" t="Include">
+              <e p="Main.shader" t="Include" />
+              <e p="Utils.hlsl" t="Include" />
+            </e>
+          </e>
+          <e p="Samples" t="Include">
+            <e p="Media" t="Include" />
+            <e p="Urp" t="Include" />
+          </e>
+        </e>
         <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Editor" t="Include">
+                <e p="Imgs" t="Include" />
+              </e>
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModuleEPOOutline.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="readMe.txt" t="Include" />
+            </e>
+          </e>
           <e p="Zenject" t="Include">
             <e p="LICENSE.txt" t="Include" />
             <e p="package.json" t="Include" />
@@ -372,7 +437,9 @@
             <e p="zenject.asmdef" t="Include" />
           </e>
         </e>
-        <e p="Prefabs" t="Include" />
+        <e p="Prefabs" t="Include">
+          <e p="Goods" t="Include" />
+        </e>
         <e p="Resources" t="Include">
           <e p="Infrastructure" t="Include" />
           <e p="UI" t="Include" />
@@ -384,22 +451,44 @@
           <e p="Data" t="Include">
             <e p="DataExtensions.cs" t="Include" />
             <e p="MoneyData.cs" t="Include" />
-            <e p="RacksData.cs" t="Include" />
+            <e p="RackData.cs" t="Include" />
+            <e p="ScriptavleObjects" t="Include">
+              <e p="GoodsStaticData.cs" t="Include" />
+              <e p="GoodsTypeData.cs" t="Include" />
+            </e>
+            <e p="StoreItemsData.cs" t="Include" />
             <e p="StoreProgress.cs" t="Include" />
+            <e p="UniqueId.cs" t="Include" />
+          </e>
+          <e p="Editor" t="Include">
+            <e p="Data" t="Include">
+              <e p="UniqueIdEditor.cs" t="Include" />
+            </e>
           </e>
           <e p="Gameplay" t="Include">
             <e p="CameraController.cs" t="Include" />
+            <e p="Crate.cs" t="Include" />
+            <e p="FunctionalRack.cs" t="Include" />
+            <e p="FunctionalRackState.cs" t="Include" />
+            <e p="Good.cs" t="Include" />
+            <e p="GoodsPoint.cs" t="Include" />
+            <e p="GoodType.cs" t="Include" />
             <e p="Hero" t="Include">
               <e p="Cursor.cs" t="Include" />
               <e p="CursorPoint.cs" t="Include" />
               <e p="Hero.cs" t="Include" />
               <e p="HeroControls.cs" t="Include" />
-              <e p="HeroInteraction.cs" t="Include" />
+              <e p="HeroHolder.cs" t="Include" />
+              <e p="HeroInteractor.cs" t="Include" />
               <e p="HeroMovement.cs" t="Include" />
             </e>
+            <e p="IHighlightable.cs" t="Include" />
+            <e p="IHoldable.cs" t="Include" />
             <e p="IInteractable.cs" t="Include" />
-            <e p="RackBase.cs" t="Include" />
-            <e p="RackTypes.cs" t="Include" />
+            <e p="Rack.cs" t="Include" />
+            <e p="RackState.cs" t="Include" />
+            <e p="RackZone.cs" t="Include" />
+            <e p="UnpurchasedRackState.cs" t="Include" />
           </e>
           <e p="Helpers" t="Include">
             <e p="Constants.cs" t="Include" />
@@ -419,8 +508,8 @@
               </e>
             </e>
             <e p="Level" t="Include">
-              <e p="InteractableItemsManager.cs" t="Include" />
               <e p="LevelManager.cs" t="Include" />
+              <e p="StoreItemsManager.cs" t="Include" />
             </e>
             <e p="LoadingCurtain.cs" t="Include" />
             <e p="ProjectCoroutineRunner.cs" t="Include" />
@@ -5878,6 +5967,8 @@
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
+      <e p="OutlineFx.csproj" t="IncludeRecursive" />
+      <e p="OutlineFx.Editor.csproj" t="IncludeRecursive" />
       <e p="OverloadedFunctionPointers.csproj" t="IncludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="PsdPlugin.csproj" t="IncludeRecursive" />

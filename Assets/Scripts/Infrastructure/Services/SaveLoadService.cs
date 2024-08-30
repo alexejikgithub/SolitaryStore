@@ -25,11 +25,6 @@ public class SaveLoadService : ISaveLoadService
 
     public void SaveProgress()
     {
-        foreach (ISaveProgress progressWriter in _saveProgressesListeners)
-        {
-            progressWriter.SaveProgress(_progressService.StoreProgress);
-        }
-
         PlayerPrefs.SetString(ProgressKey, _progressService.StoreProgress.ToJson());
     }
 

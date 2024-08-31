@@ -4012,6 +4012,7 @@ MonoBehaviour:
   _price: 10
   _rackZone: {fileID: 1840631982}
   _functionalRack: {fileID: 1828450756}
+  _collider: {fileID: 749917261}
 --- !u!1 &772843790
 GameObject:
   m_ObjectHideFlags: 0
@@ -4378,6 +4379,7 @@ MonoBehaviour:
   _price: 10
   _rackZone: {fileID: 788506076}
   _functionalRack: {fileID: 269116687}
+  _collider: {fileID: 825528775}
 --- !u!4 &825528777
 Transform:
   m_ObjectHideFlags: 0
@@ -9375,6 +9377,7 @@ MonoBehaviour:
   _price: 10
   _rackZone: {fileID: 973392518}
   _functionalRack: {fileID: 726368841}
+  _collider: {fileID: 1934553942}
 --- !u!1 &1974447604
 GameObject:
   m_ObjectHideFlags: 0
@@ -9777,6 +9780,7 @@ MonoBehaviour:
   _price: 10
   _rackZone: {fileID: 606374667}
   _functionalRack: {fileID: 1785638049}
+  _collider: {fileID: 2085869813}
 --- !u!1 &2100972734
 GameObject:
   m_ObjectHideFlags: 0

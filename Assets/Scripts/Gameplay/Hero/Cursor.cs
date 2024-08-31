@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 using Zenject;
 
 public class Cursor : MonoBehaviour
@@ -30,6 +31,12 @@ public class Cursor : MonoBehaviour
         _cursorPoint.transform.rotation = Quaternion.LookRotation(Vector3.forward, -_direction);
         _cursorPoint.transform.position = _constrainedCursorPosition;
     }
+    
+    public bool IsOverNavMesh()
+    {
+        NavMeshHit hit;
+        return NavMesh.SamplePosition(_cursorPoint.transform.position, out hit, 0.1f, NavMesh.AllAreas);
+    }
 
     public void Enable(IInputService inputService, Camera mainCamera)
     {
@@ -42,4 +49,6 @@ public class Cursor : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+    
+    
 }

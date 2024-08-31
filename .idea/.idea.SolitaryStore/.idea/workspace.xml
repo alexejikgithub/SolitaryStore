@@ -53,19 +53,20 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F5B293C7-4049-457C-ABC2-8437C5A76392/a8/abba1cda/IInitializable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0DA8A948-97C9-4541-9A99-35A75F4E9B6A/40/c3828c0a/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/LevelSceneContext/LevelInstaller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/82A2FD07-3EE4-4992-8E16-1903460426D7/0f/556d2d33/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/FunctionalRack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/RackZone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2D036C1-6CA6-4E0E-B937-03A3B13E733A/af/0841895b/Ray.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Helpers/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Infrastructure/Level/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71DE4FCC-BA99-4D76-9292-55576AF20B8C/03/03efa4b4/NavMesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C2D036C1-6CA6-4E0E-B937-03A3B13E733A/e2/afed3ee6/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gameplay/Rack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/71DE4FCC-BA99-4D76-9292-55576AF20B8C/05/5e164c6f/NavMeshHit.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Inject/ProjectContext/ServicesInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/ProgressService/IProgressService.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/ProgressService/ISaveProgress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Data/ShopProgress.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Infrastructure/Services/ISaveLoadService.cs" />
@@ -105,16 +106,18 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/HeroControls.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/Hero.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/IInteractable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/HeroInteractor.cs" />
         <option value="$PROJECT_DIR$/Assets/Outline/Runtime/OutlineFx.cs" />
         <option value="$PROJECT_DIR$/Assets/Outline/Runtime/OutlineFxFeature.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/FunctionalRack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/RackState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Rack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/UnpurchasedRackState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Rack.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/IHoldable.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/HeroHolder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Crate.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/FunctionalRackState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/Cursor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/Hero/HeroInteractor.cs" />
       </list>
     </option>
   </component>
@@ -251,7 +254,11 @@
       <workItem from="1724970871323" duration="1067000" />
       <workItem from="1724972862533" duration="1766000" />
       <workItem from="1724974815078" duration="1643000" />
-      <workItem from="1724976667738" duration="750000" />
+      <workItem from="1724976667738" duration="1356000" />
+      <workItem from="1725058862557" duration="1588000" />
+      <workItem from="1725060667439" duration="747000" />
+      <workItem from="1725062745663" duration="1783000" />
+      <workItem from="1725064876846" duration="873000" />
     </task>
     <servers />
   </component>
@@ -276,10 +283,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="670" y="198" key="RiderGenerateDialog" timestamp="1724888673650">
+    <state x="670" y="198" key="RiderGenerateDialog" timestamp="1724977359195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="670" y="198" key="RiderGenerateDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1724888673650" />
+    <state x="670" y="198" key="RiderGenerateDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1724977359195" />
     <state x="621" y="208" width="785" height="624" key="find.popup" timestamp="1724887059243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

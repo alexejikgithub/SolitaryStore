@@ -92,8 +92,14 @@ public class HeroInteractor : MonoBehaviour
 
     public void TryInteract()
     {
+        
+        
         if (_currentHiglighted == null)
         {
+            if (_hero.Holder.IsHolding && _cursor.IsOverNavMesh())
+            {
+                _hero.Holder.UnHold(_cursor.CursorPoint.transform.position);
+            }
             return;
         }
         

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using Zenject;
 
@@ -11,6 +12,7 @@ public class Rack : MonoBehaviour, IInteractable
     [SerializeField] private float _price;
     [SerializeField] private RackZone _rackZone;
     [SerializeField] private FunctionalRack _functionalRack;
+    [SerializeField] private Collider2D _collider;
 
 
     [Inject] private IProgressService _progress;
@@ -68,6 +70,7 @@ public class Rack : MonoBehaviour, IInteractable
     public void SetFunctional()
     {
         SetState(_functionalRackState);
+        StartCoroutine(ResetCollider());
     }
 
     private void SetState(RackState newState)
@@ -76,5 +79,12 @@ public class Rack : MonoBehaviour, IInteractable
         _activeState = newState;
         _activeState.Enter();
         _activeState.Initialize(_progress);
+    }
+
+    private IEnumerator ResetCollider()
+    {
+        _collider.enabled = false;
+        yield return new WaitForEndOfFrame();
+        _collider.enabled = true;
     }
 }

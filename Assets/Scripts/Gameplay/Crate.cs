@@ -14,6 +14,11 @@ public class Crate : MonoBehaviour, IHoldable
     private int _heldLayerIndex =5;
     private int _defaultLayerIndex;
 
+    private bool _isAvailable;
+
+    private Tween _movementTween;
+    
+
     public GoodType GoodType => _goodType;
     public void Highlight(Hero hero)
     {
@@ -40,10 +45,14 @@ public class Crate : MonoBehaviour, IHoldable
         _renderer.sortingOrder = _heldLayerIndex;
         
         transform.parent = holdPoint;
-        transform.DOLocalMove(Vector3.zero, _moveTime);
+        _movementTween?.Kill();
+        _movementTween = transform.DOLocalMove(Vector3.zero, _moveTime);
     }
 
-    public void BecomeUnHeld()
+    public void BecomeUnHeld(Vector3 dropPosition)
     {
+        transform.parent = null;
+        _movementTween?.Kill();
+        _movementTween = transform.DOMove(dropPosition,_moveTime).OnComplete(() => _renderer.sortingOrder=_defaultLayerIndex);
     }
 }

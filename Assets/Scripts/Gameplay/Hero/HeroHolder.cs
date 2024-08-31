@@ -21,12 +21,12 @@ public class HeroHolder : MonoBehaviour
     public void Hold(IHoldable holdable)
     {
         _currentHeld = holdable;
-        
         _currentHeld.BecomeHeld(_holdPoint);
     }
 
-    public void UnHold()
+    public void UnHold(Vector3 dropPosition)
     {
-        
+        _currentHeld.BecomeUnHeld(dropPosition);
+        _currentHeld = null;
     }
 }

@@ -1,13 +1,16 @@
-﻿public class FunctionalRackState : RackState
+﻿using UnityEngine;
+
+public class FunctionalRackState : RackState
 {
     private Rack _rack;
     private FunctionalRack _functionalRack;
-    
+
     public FunctionalRackState(Rack rack, FunctionalRack functionalRack)
     {
         _rack = rack;
         _functionalRack = functionalRack;
     }
+
     public override void Initialize(IProgressService _progress)
     {
         if (_progress.StoreProgress.StoreItemsData.TryGetRackDataByType(_rack.RackData.Type, out RackData rackData))
@@ -21,7 +24,10 @@
 
     public override void Highlight(Hero hero)
     {
-        if (hero.Holder.IsHolding)
+        bool isHighlightPositive = hero.Holder.CurrentHeld is Crate crate 
+                                   && crate.GoodType == _rack.RackData.Type;
+    
+        if (isHighlightPositive)
         {
             _functionalRack.HighlightPositive();
         }
@@ -47,14 +53,14 @@
             _rack.RackData.SetItemsAmount(_rack.RackData.ItemsAmount + 1);
         }
     }
+
     public override void Enter()
     {
         _functionalRack.Enable();
     }
+
     public override void Exit()
     {
         _functionalRack.Disable();
     }
-
-    
 }

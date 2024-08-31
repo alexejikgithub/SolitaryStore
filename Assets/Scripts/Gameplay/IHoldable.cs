@@ -3,5 +3,5 @@
 public interface IHoldable :IHighlightable
 {
     void BecomeHeld(Transform holdPoint);
-    void BecomeUnHeld();
+    void BecomeUnHeld(Vector3 dropPosition);
 }
